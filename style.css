@@ -1,0 +1,101 @@
+
+:root {
+    --color-primary-light: rgb(9, 121, 71);
+    --color-primary-dark: rgb(0, 212, 255);
+    --color-primary: #020024;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--color-primary);
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, rgba(9, 121, 71, .8), rgba(0, 212, 255, .8));
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-size: 2rem;
+    
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    padding: 3rem;
+}
+
+.header__items {
+    list-style: none;
+    display: flex;
+}
+
+.header__item {
+    margin-left: 2rem;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 2px solid #18d681;
+    border-radius: 8px;
+
+}
+
+.header__text-box {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #18d681;
+    border-radius: 8px;
+    transition: all .3s;
+
+}
+.btn:hover,
+.btn:active {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    transform: translateY(-3px);
+}
+
+
+.u-margin-bottom-medium {
+    margin-bottom: 3rem;
+}
+/* .u-center-text {
+    text-align: center;
+} */
+
+.header__brand {
+    height: 85px;
+    width: auto;
+
+}
